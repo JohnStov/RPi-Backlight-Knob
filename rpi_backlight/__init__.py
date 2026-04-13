@@ -37,6 +37,8 @@ _BACKLIGHT_SYSFS_PATHS = {
         if Path("/sys/class/backlight/10-0045/").exists()
         else "/sys/class/backlight/11-0045/"
         if Path("/sys/class/backlight/11-0045/").exists()
+        else "/sys/class/backlight/panel_backlight@0/"
+        if Path("/sys/class/backlight/panel_backlight@0/").exists()
         else "/sys/class/backlight/panel_backlight@1/"
         if Path("/sys/class/backlight/panel_backlight@1/").exists()
         else "/sys/class/backlight/rpi_backlight/"
