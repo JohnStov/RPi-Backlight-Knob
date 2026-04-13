@@ -37,6 +37,8 @@ _BACKLIGHT_SYSFS_PATHS = {
         if Path("/sys/class/backlight/10-0045/").exists()
         else "/sys/class/backlight/11-0045/"
         if Path("/sys/class/backlight/11-0045/").exists()
+        else "/sys/class/backlight/panel_backlight@1/"
+        if Path("/sys/class/backlight/panel_backlight@1/").exists()
         else "/sys/class/backlight/rpi_backlight/"
     ),
     BoardType.TINKER_BOARD: "/sys/devices/platform/ff150000.i2c/i2c-3/3-0045/",
